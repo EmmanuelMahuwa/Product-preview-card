@@ -1,56 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+}
 .home-container {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    background:hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color: orange;
+    overflow:hidden;
 }
-.inner-container {
+
+
+.product-info {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    justify-content: center;
+    align-items: flex-start;
     gap: 1rem;
-    background-color: pink;
-    padding:2rem;
+    padding: 1.5rem;
+    padding:4%;
+    margin-top:0rem;
 }
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+}
+
 .product-image {
     width: 100%;
-    height: auto;
-    border-radius: 1rem;
+    height: 33rem;
+    object-fit: cover;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
+
+.product {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    
+}
+
 .product-name {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    width: 100%;
+    line-height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+
+.product-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    color: hsl(228, 12%, 48%);
+}
+
 .price {
+    margin-top: 0.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-family: 'Fraunces', serif;
+
 }
 
 .selling-price {
-    font-family: cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
+    font-size: 2.5rem;
 }
+
 .actual-price {
+    font-family: 'Fraunces', serif;
     text-decoration: line-through;
-    color: gray;
+    color: hsl(228, 12%, 48%);
 }
+
 .cart-button {
+    width: 100%;
     background-color: hsl(158, 36%, 37%);
     color: white;
     border: none;
-    padding: 1rem 6rem;
-    font-weight: bold;
+    padding: 1.2rem;
     cursor: pointer;
-    border-radius: 0.5rem
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
+
 .cart-button:hover {
     background-color: hsl(158, 42%, 18%);
 }
+
 .cart-icon {
-    margin-right: 0.5rem;
+    width: 1.3rem;
+    height: 100%;
+    margin-right: 0.7rem;
+}
+
+
+@media (min-width: 48rem) {
+    .home-container {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       padding-left: 15%;
+       padding-right: 15%;
+       padding-top: 5%;
+    }
+    .image-container {
+        width: 100%;
+    }
+    .product-info {
+        width: 50%;
+    }
+    .product-name {
+        line-height: 2rem;
+    }
+
+
+
+
 }
